@@ -4,11 +4,11 @@ import Image from "next/image";
 import HeaderTitle from "@/components/HOC/headerProp";
 import ImageCard from "@/components/Cards/Card";
 import GridLayout from "@/components/Cards/CardService";
-import BrandLogos from "@/components/brandLogo";
-import TeamGrid from "@/components/teamMembers";
-import TestimonialCarousel from "@/components/testimonials";
-import VideoPlayer from "@/components/video";
-import Contact from "@/components/contact";
+import BrandLogos from "@/components/Home/brandLogo";
+import TeamGrid from "@/components/Home/teamMembers";
+import TestimonialCarousel from "@/components/Home/testimonials";
+import VideoPlayer from "@/components/Home/video";
+import Contact from "@/components/Home/contact";
 import Footer from "@/components/footer";
 import Hero from "@/components/header";
 

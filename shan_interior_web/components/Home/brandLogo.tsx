@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import React from 'react'
-import {brandItems} from '../assets/brands/brands'
+import {brandItems} from '../../assets/brands/brands'
 
 const BrandLogos = () => {
     return (

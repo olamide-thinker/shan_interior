@@ -2,7 +2,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import { FaPlay } from "react-icons/fa";
-import play from '../assets/play.svg'
+import play from '../../assets/play.svg'
 
 
 const VideoPlayer = () => {

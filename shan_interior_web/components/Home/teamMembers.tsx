@@ -1,5 +1,5 @@
 import Image from "next/image";
-import imageOne from '../assets/teams/team-1.png';
+import imageOne from '../../assets/teams/team-1.png';
 
 
 const teamMembers = [

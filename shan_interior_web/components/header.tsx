@@ -31,15 +31,15 @@ const Hero = () => {
                 Home
               </Link>
               <Link href="#">
-                About Us             
-                 </Link>
+                About Us
+              </Link>
               <Link href="#">
                 3D Design Projects
               </Link>
               <Link href="#">
                 Interior Design Projects
               </Link>
-              
+
             </div>
           </nav>
 

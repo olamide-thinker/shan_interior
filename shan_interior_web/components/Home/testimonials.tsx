@@ -5,7 +5,7 @@ import Image from "next/image";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import imageOne from '../assets/teams/team-1.png';
+import imageOne from '../../assets/teams/team-1.png';
 
 
 const testimonials = [
