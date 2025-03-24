@@ -25,7 +25,7 @@ const Hero = () => {
         <header className="absolute top-0 left-0 w-full flex flex-wrap justify-between items-center px-6 md:px-10 py-4 z-10">
           <Image src={logo} alt="Shan" className="w-32 md:w-auto" />
 
-          <nav className="bg-[#605d56] rounded-full px-4 py-2 hidden md:block">
+          <nav className="bg-[#4d4c44]/40 rounded-full px-6 py-4 hidden md:block">
             <div className="flex text-white items-center gap-4 md:gap-6 text-sm md:text-base">
               <Link href="#">
                 Home
@@ -43,7 +43,7 @@ const Hero = () => {
             </div>
           </nav>
 
-          <Button className="bg-[#605d56] px-5 py-2 md:px-6 md:py-3 rounded-lg text-white text-sm md:text-base">
+          <Button className="bg-[#4d4c44]/40 px-6 py-4 md:px-6 md:py-6 rounded-full text-white text-sm md:text-base">
             Book an Appointment
           </Button>
         </header>

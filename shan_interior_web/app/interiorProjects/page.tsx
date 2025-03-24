@@ -8,6 +8,9 @@ import logo from "../../assets/header/Shan-black.png";
 import heroImage from "../../assets/interiorprojects/interior.png";
 import Footer from '@/components/footer';
 import ProjectCard from '@/components/3D-projects/game-Changer/projectCard';
+import Objectives from '@/components/interiorProjects/objectives';
+import ValueCard from '@/components/interiorProjects/valueCardProps';
+import HeaderTitle from '@/components/HOC/headerProp';
 
 const Page = () => {
     const [isNavOpen, setIsNavOpen] = useState(false);
@@ -59,10 +62,10 @@ const Page = () => {
 
                         {/* Headline */}
                         <h1 className="text-[#8b8b8b] text-3xl md:text-5xl font-bold leading-tight">
-                        Explore Our Thoughtfully 
+                            Explore Our Thoughtfully
                         </h1>
                         <h2 className="text-3xl md:text-5xl font-bold">
-                        Designed Spaces
+                            Designed Spaces
                         </h2>
 
                         {/* Description */}
@@ -70,7 +73,7 @@ const Page = () => {
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                         </p>
 
-                       
+
                         {/* Hero Image */}
                         <Image src={heroImage} alt="3D Projects" className="w-48 md:w-auto mx-auto mt-6 md:mt-10" />
                     </div>
@@ -78,15 +81,14 @@ const Page = () => {
 
                 {/* services */}
 
-              
 
-                <section className=" project-3D  mt-10 ">
 
-                    <ProjectCard title="Design Project" />
-
-                </section>
+                
 
             </div>
+
+
+           
 
             {/* footer */}
             <section className=" project-3D  flex flex-col gap-6 mt-10">

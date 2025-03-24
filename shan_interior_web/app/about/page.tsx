@@ -11,6 +11,9 @@ import Footer from '@/components/footer';
 import ProjectCard from '@/components/3D-projects/game-Changer/projectCard';
 import ImageCard from '@/components/Cards/Card';
 import AboutHero from '@/components/about/hero-image';
+import HeaderTitle from '@/components/HOC/headerProp';
+import ValueCard from '@/components/interiorProjects/valueCardProps';
+import Objectives from '@/components/interiorProjects/objectives';
 
 const Page = () => {
     const [isNavOpen, setIsNavOpen] = useState(false);
@@ -81,20 +84,51 @@ const Page = () => {
                 </section>
 
                 
-
-                <section className=" project-3D  mt-10 ">
-
-                    
-
-                </section>
-
-                <section className=" project-3D  mt-10 ">
-
-                    
-
-                </section>
+                
 
             </div>
+            <section className="bg-white project-3D  mt-10 ">
+
+                    <Objectives
+                        missionTitle="Mission"
+                        missionContent={[
+                            "To transform spaces into personalized sanctuaries that reflect the unique style and vision of each client, we blend innovative design solutions, cutting-edge technology, and impeccable craftsmanship. Our approach ensures that every space is not only visually stunning but also highly functional, comfortable, and meaningful.",
+                            "By incorporating 3D visualization, sustainable materials, and bespoke design elements, we bring ideas to life with precision and creativity."
+                        ]}
+                        profile={{
+                            name: "Vlad BZ",
+                            role: "CTO and Founder",
+                            imageUrl: "/images/profile.jpg", // Ensure the image path is correct
+                            about: "Passionate about innovative design and sustainability, Vlad leads the team in crafting visually compelling and functionally superior spaces."
+                        }}
+                    />
+
+                    <Objectives
+                        missionTitle="Vision"
+                        missionContent={[
+                            "To ba leading force in interior design, redefining spaces with innovation, elegance, and functionality. We envision a world where every home, office, and commercial space reflects its owner’s unique style while promoting comfort, creativity, and sustainability. ",
+                            "Through cutting-edge 3D visualization and impeccable craftsmanship, we strive to turn imagination into reality—one space at a time."
+                        ]}
+
+                    />
+
+                </section>
+
+                
+
+                <section className=" project-3D bg-[#f7f3ed]  flex flex-col gap-6 px-6 mt-10">
+                <HeaderTitle
+                    title=""
+                    heading=""
+                    subHeading="Core Values"
+                    description="We begin with a thorough consultation to understand your vision, requirements, and budget for the project. This discussion allows us to align our approach with your expectations and goals. "
+                    button=""
+                />
+
+                <ValueCard />
+
+            </section>
+
 
             {/* footer */}
             <section className=" project-3D  flex flex-col gap-6 mt-10">

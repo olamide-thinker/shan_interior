@@ -3,14 +3,14 @@ import { cardAbout } from "../../mockData/imageCard";
 
 const ImageCard = () => {
   return (
-    <div className="flex flex-wrap gap-6">
+    <div className="w-full  flex flex-wrap gap-6">
       {cardAbout.map((card, index) => (
         <div key={index} className="relative w-full max-w-md">
           {/* Background Image */}
           <Image
             src={card.imageSrc}
             alt={card.altText}
-            width={659}
+            width={1259}
             height={400}
             className="rounded-lg object-cover"
           />

@@ -11,7 +11,7 @@ import logo from "../assets/header/Shan-white.png";
 
 const Footer = () => {
   return (
-    <footer className="bg-black text-white py-15 relative">
+    <footer className="bg-black text-white py-10 relative">
       {/* Background Overlay */}
       <div className="absolute inset-0 opacity-20">
         <Image
@@ -22,17 +22,14 @@ const Footer = () => {
         />
       </div>
 
-      <div className="relative z-10 max-w-6xl mx-auto px-6 grid grid-cols-3 gap-6">
+      {/* Footer Content */}
+      <div className="relative z-10 max-w-6xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
         {/* Left Section - Logo & Description */}
-        <div className="h-[15rem] flex flex-col justify-between ">
-          <div>
-            <Image src={logo} alt="Shan" className="w-32  md:w-auto" />
-
-            <p className="text-gray-400 mt-2">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod.
-            </p>
-          </div>
+        <div className="flex flex-col items-center sm:items-start">
+          <Image src={logo} alt="Shan" className="w-32 md:w-auto" />
+          <p className="text-gray-400 mt-3 text-center sm:text-left">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
+          </p>
 
           {/* Social Icons */}
           <div className="flex space-x-4 mt-4">
@@ -52,7 +49,7 @@ const Footer = () => {
         </div>
 
         {/* Middle Section - Navigation */}
-        <div>
+        <div className="text-center sm:text-left">
           <h3 className="text-orange-400 font-semibold">Shan Interiors</h3>
           <ul className="mt-3 space-y-2 text-gray-400">
             <li>
@@ -69,7 +66,7 @@ const Footer = () => {
         </div>
 
         {/* Right Section - Legal & Support */}
-        <div className="grid grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 text-center sm:text-left">
           <div>
             <h3 className="text-orange-400 font-semibold">Legal Information</h3>
             <ul className="mt-3 space-y-2 text-gray-400">

@@ -11,6 +11,7 @@ import VideoPlayer from "@/components/Home/video";
 import Contact from "@/components/Home/contact";
 import Footer from "@/components/footer";
 import Hero from "@/components/header";
+import ProcessTimeline from "@/components/Home/process";
 
 
 export default function Home() {
@@ -93,6 +94,8 @@ export default function Home() {
           subHeading="Reality is our Process"
           description="At Shan Interiors, we're passionate about creating spaces that inspire and delight. With our unique approach to design, unparalleled creativity, and unwavering commitment to excellence, we're here to help you bring your vision to life in stunning style. " 
           />
+
+          <ProcessTimeline/>
       </section>
 
 
