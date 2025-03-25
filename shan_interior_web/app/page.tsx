@@ -1,6 +1,3 @@
-import { Button } from "@/components/ui/button";
-import Image from "next/image";
-
 import HeaderTitle from "@/components/HOC/headerProp";
 import ImageCard from "@/components/Cards/Card";
 import GridLayout from "@/components/Cards/CardService";

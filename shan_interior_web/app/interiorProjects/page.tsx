@@ -1,8 +1,6 @@
 "use client"
 import React, { useState } from 'react';
 import Image from 'next/image';
-import Link from 'next/link';
-import Hero from '@/components/header';
 import { Button } from '@/components/ui/button';
 import logo from "../../assets/header/Shan-black.png";
 import heroImage from "../../assets/interiorprojects/hero/interior.png";

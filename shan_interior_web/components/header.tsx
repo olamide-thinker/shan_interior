@@ -3,7 +3,6 @@ import { Button } from './ui/button'
 import Image from 'next/image'
 import logo from "../assets/header/Shan-white.png";
 import herobg from "../assets/header/hero-header.png";
-import Link from 'next/link';
 import Nav from '@/components/Nav/nav';
 
 const Hero = () => {

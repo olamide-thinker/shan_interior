@@ -2,14 +2,9 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import Hero from '@/components/header';
 import { Button } from '@/components/ui/button';
 import logo from "../../assets/header/Shan-black.png";
-import heroImage from "../../assets/3dprojects/3d-hero.png";
-import GridLayout from '@/components/3D-projects/game-Changer/layout';
 import Footer from '@/components/footer';
-import ProjectCard from '@/components/3D-projects/game-Changer/projectCard';
-import ImageCard from '@/components/Cards/Card';
 import AboutHero from '@/components/about/hero-image';
 import HeaderTitle from '@/components/HOC/headerProp';
 import ValueCard from '@/components/interiorProjects/valueCardProps';
