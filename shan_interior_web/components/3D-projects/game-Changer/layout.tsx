@@ -65,7 +65,7 @@ const GridLayout = () => {
       </p>
 
       {/* Grid Layout */}
-      <div className="grid grid-cols-2 grid-rows-5 gap-6 w-[90%] md:w-[70%] lg:w-[50%] h-fit mx-auto">
+      <div className="grid grid-cols-1 grid-rows-5 gap-6 w-[90%] md:w-[70%] lg:w-[50%] h-fit mx-auto">
         {gridBoxes.map((box) => (
           <div
             key={box.id}
