@@ -4,6 +4,7 @@ import Image from 'next/image'
 import logo from "../assets/header/Shan-white.png";
 import herobg from "../assets/header/hero-header.png";
 import Link from 'next/link';
+import Nav from '@/components/Nav/nav';
 
 const Hero = () => {
   return (
@@ -25,23 +26,7 @@ const Hero = () => {
         <header className="absolute top-0 left-0 w-full flex flex-wrap justify-between items-center px-6 md:px-10 py-4 z-10">
           <Image src={logo} alt="Shan" className="w-32 md:w-auto" />
 
-          <nav className="bg-[#4d4c44]/40 rounded-full px-6 py-4 hidden md:block">
-            <div className="flex text-white items-center gap-4 md:gap-6 text-sm md:text-base">
-              <Link href="#">
-                Home
-              </Link>
-              <Link href="#">
-                About Us
-              </Link>
-              <Link href="#">
-                3D Design Projects
-              </Link>
-              <Link href="#">
-                Interior Design Projects
-              </Link>
-
-            </div>
-          </nav>
+          <Nav/>
 
           <Button className="bg-[#4d4c44]/40 px-6 py-4 md:px-6 md:py-6 rounded-full text-white text-sm md:text-base">
             Book an Appointment

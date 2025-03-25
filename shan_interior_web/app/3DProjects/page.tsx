@@ -9,6 +9,7 @@ import heroImage from "../../assets/3dprojects/3d-hero.png";
 import GridLayout from '@/components/3D-projects/game-Changer/layout';
 import Footer from '@/components/footer';
 import ProjectCard from '@/components/3D-projects/game-Changer/projectCard';
+import Nav from '@/components/Nav/nav';
 
 const Page = () => {
     const [isNavOpen, setIsNavOpen] = useState(false);
@@ -30,23 +31,7 @@ const Page = () => {
                         </button>
 
                         {/* Navbar */}
-                        <nav className="bg-[#4d4c44]/25 rounded-full px-6 py-4 hidden md:block">
-                            <div className="flex text-white items-center gap-4 md:gap-6 text-sm md:text-base">
-                                <Link href="#">
-                                    Home
-                                </Link>
-                                <Link href="#">
-                                    About Us
-                                </Link>
-                                <Link href="#">
-                                    3D Design Projects
-                                </Link>
-                                <Link href="#">
-                                    Interior Design Projects
-                                </Link>
-
-                            </div>
-                        </nav>
+                        <Nav/>
 
 
                         <Button className="bg-[#4d4c44]/40 px-6 py-4 md:px-6 md:py-6 rounded-full text-white text-sm md:text-base">
