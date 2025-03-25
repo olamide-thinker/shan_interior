@@ -15,7 +15,7 @@ interface ObjectivesProps {
 
 export default function Objectives({ missionTitle, missionContent, profile }: ObjectivesProps) {
   return (
-    <div className="w-full mb-10">
+    <div className="w-full mb-10 p-4 md:p-10">
       {/* Mission Section */}
       <div className="flex flex-col lg:flex-row justify-between">
         <h1 className="text-[2.8rem] font-bold">{missionTitle}</h1>

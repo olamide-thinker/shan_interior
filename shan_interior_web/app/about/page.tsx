@@ -35,7 +35,7 @@ const Page = () => {
                         </button>
 
                         {/* Navbar */}
-                        <nav className="bg-[#605d56] rounded-full px-4 py-2 hidden md:block">
+                        <nav className="bg-[#4d4c44]/25 rounded-full px-6 py-4 hidden md:block">
                             <div className="flex text-white items-center gap-4 md:gap-6 text-sm md:text-base">
                                 <Link href="#">
                                     Home
@@ -54,7 +54,7 @@ const Page = () => {
                         </nav>
 
 
-                        <Button className="bg-[#605d56] px-4 md:px-6 py-2 md:py-3 rounded-lg text-white text-sm md:text-base">
+                        <Button className="bg-[#4d4c44]/40 px-6 py-4 md:px-6 md:py-6 rounded-full text-white text-sm md:text-base">
                             Book an Appointment
                         </Button>
                     </header>
