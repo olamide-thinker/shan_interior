@@ -23,9 +23,9 @@ const Footer = () => {
       </div>
 
       {/* Footer Content */}
-      <div className="relative z-10 max-w-6xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
+      <div className="relative z-10  max-w-6xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
         {/* Left Section - Logo & Description */}
-        <div className="flex flex-col items-center sm:items-start">
+        <div className="flex flex-col items-center sm:items-start  ">
           <Image src={logo} alt="Shan" className="w-32 md:w-auto" />
           <p className="text-gray-400 mt-3 text-center sm:text-left">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
