@@ -18,7 +18,7 @@ const HeaderTitle: React.FC<HeaderTitleProps> = ({
   button,
 }) => {
   return (
-    <header className="flex   flex-col lg:flex-row h-fit md:h-[8rem] items-end justify-between px-6 py-0 gap-4">
+    <header className="flex border  flex-col lg:flex-row h-fit  lg:items-end justify-between px-6 py-0 gap-4">
       {/* Title & Heading Section */}
       <div className="max-w-lg  h-fit">
         <p className="text-sm md:text-base font-medium italic mb-6">{title}</p>

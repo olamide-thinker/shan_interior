@@ -4,7 +4,7 @@ import React from "react";
 
 export const TopBar = () => {
   return (
-    <div className="w-full z-50 flex flex-col italic md:flex-row justify-between bg-black text-gray-300 px-6 md:px-10 py-1 text-center md:text-left">
+    <div className="w-full hidden sm:flex z-50  flex-col italic md:flex-row justify-between bg-black text-gray-300 px-6 md:px-10 py-1 text-center md:text-left">
       <p> Your Preferred Interior Design Company</p>
       <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-8">
         <Link className="flex gap-2 group items-center" href={""}>

@@ -14,7 +14,7 @@ export const NavSection = () => {
   // console.log(isHome, "isHome");
 
   return (
-    <header className="absolute z-50 top-14 left-0 w-full flex flex-wrap justify-between items-center px-6 md:px-10 py-4">
+    <header className="absolute z-50 sm:top-14 left-0 w-full flex flex-wrap justify-between items-center px-6 md:px-10 py-4">
       <Image
         src={isHome ? whiteLogo : blackLogo}
         alt="Shan"
