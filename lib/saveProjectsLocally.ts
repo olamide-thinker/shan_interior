@@ -50,8 +50,8 @@ async function saveProjectsLocally(folderPrefix: string) {
   }
 }
 
-export const getStaticProps = async () => {
-  const folderPrefix = "shanInteriorsProjects/interior projects";
+export const getStaticProps = async (folderPrefix: string) => {
+  // const folderPrefix = "shanInteriorsProjects/interior projects";
 
   const projects = await saveProjectsLocally(folderPrefix);
 
