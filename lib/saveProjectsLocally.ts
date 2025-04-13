@@ -7,7 +7,10 @@ import path from "path";
 
 // Function to save project data locally (Server-side only)
 async function saveProjectsLocally(folderPrefix: string) {
-  const projects = await getProjects(folderPrefix);
+  const projects = await getProjects(folderPrefix).catch((err) => {
+    console.error("Error fetching projects:", err);
+    return [];
+  });
 
   const filePath = path.join(
     process.cwd(),
