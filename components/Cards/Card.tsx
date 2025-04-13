@@ -1,8 +1,4 @@
 "use client";
-/* eslint-disable @typescript-eslint/no-explicit-any */
-// // import Image from "next/image";
-
-// import { getProjects } from "../Comps/getCloudinaryData";
 import saveProjectsLocally from "@/lib/saveProjectsLocally";
 import { ProjectCard } from "../Comps/projectCard";
 import { useEffect, useState } from "react";
@@ -11,30 +7,6 @@ type ProjectListProps = {
   projectFolderPrefix: string;
   isFull: boolean;
 };
-
-// const ProjectList = async ({
-//   projectFolderPrefix,
-//   isFull,
-// }: ProjectListProps) => {
-//   const projects = await getProjects(projectFolderPrefix);
-//   console.log("Projects:", projects);
-
-//   return (
-//     <div className="w-fit grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3   gap-6">
-//       {isFull
-//         ? projects.map((d, i) => (
-//             <div key={i} className="relative w-full max-w-md">
-//               <ProjectCard details={d} />
-//             </div>
-//           ))
-//         : projects.slice(0, 3).map((d, i) => (
-//             <div key={i} className="relative w-full max-w-md">
-//               <ProjectCard details={d} />
-//             </div>
-//           ))}
-//     </div>
-//   );
-// };
 
 // export default ProjectList;
 const ProjectList = ({ projectFolderPrefix, isFull }: ProjectListProps) => {

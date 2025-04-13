@@ -1,5 +1,4 @@
 "use server";
-/* eslint-disable @typescript-eslint/no-explicit-any */
 // This file handles saving the project data locally on the server side
 // Cloudinary data fetcher
 import { getProjects } from "@/components/Comps/getCloudinaryData";
