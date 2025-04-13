@@ -665,16 +665,6 @@
     "description": "",
     "images": [
       {
-        "Image_id": "PROJECT_ALIU_lg1jgc",
-        "image": "https://res.cloudinary.com/dy4rxwp5y/image/upload/v1744570510/shanInteriorsProjects/project_3d/PROJRCT%20ALI/PROJECT_ALIU_lg1jgc.jpg",
-        "caption": "PROJECT ALIU lg1jgc"
-      },
-      {
-        "Image_id": "PROJECT_ALIU_2_wg3aak",
-        "image": "https://res.cloudinary.com/dy4rxwp5y/image/upload/v1744570510/shanInteriorsProjects/project_3d/PROJRCT%20ALI/PROJECT_ALIU_2_wg3aak.jpg",
-        "caption": "PROJECT ALIU 2 wg3aak"
-      },
-      {
         "Image_id": "MASTER_FINAL_edited_b5kptz",
         "image": "https://res.cloudinary.com/dy4rxwp5y/image/upload/v1744570510/shanInteriorsProjects/project_3d/PROJRCT%20ALI/MASTER_FINAL_edited_b5kptz.jpg",
         "caption": "MASTER FINAL edited b5kptz"
@@ -863,11 +853,6 @@
     "location": "",
     "description": "",
     "images": [
-      {
-        "Image_id": "XNGMN_ngdkwv",
-        "image": "https://res.cloudinary.com/dy4rxwp5y/image/upload/v1744570515/shanInteriorsProjects/project_3d/SHAN%20AMBASSADOR/XNGMN_ngdkwv.jpg",
-        "caption": "XNGMN ngdkwv"
-      },
       {
         "Image_id": "SHAN_-_AMASSADOR_PROJECT_-_D_Scene_9_2_gv001_.Denoiser.0000_aeqpt4",
         "image": "https://res.cloudinary.com/dy4rxwp5y/image/upload/v1744570515/shanInteriorsProjects/project_3d/SHAN%20AMBASSADOR/SHAN_-_AMASSADOR_PROJECT_-_D_Scene_9_2_gv001_.Denoiser.0000_aeqpt4.jpg",
