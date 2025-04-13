@@ -1,9 +1,9 @@
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 
 interface ProfileProps {
   name: string;
   role: string;
-  imageUrl: string;
+  imageUrl: StaticImageData;
   about: string;
 }
 
@@ -13,7 +13,11 @@ interface ObjectivesProps {
   profile?: ProfileProps; // Now optional
 }
 
-export default function Objectives({ missionTitle, missionContent, profile }: ObjectivesProps) {
+export default function Objectives({
+  missionTitle,
+  missionContent,
+  profile,
+}: ObjectivesProps) {
   return (
     <div className="w-full mb-10 p-4 md:p-10">
       {/* Mission Section */}
@@ -30,17 +34,17 @@ export default function Objectives({ missionTitle, missionContent, profile }: Ob
           {/* Profile Card (Only Render If Profile Exists) */}
           {profile && (
             <div className="flex w-full flex-col justify-center max-w-[520px]">
-              <div className="relative flex w-full flex-col">
-                <div className="text-card-foreground mb-5 flex items-center py-6">
+              <div className="relative flex w-full flex-col border p-4 rounded-lg bg-white shadow-md dark:bg-zinc-800">
+                <div className="text-card-foreground mb-2 flex items-center py-2">
                   {/* Profile Image and Details */}
-                  <div className="flex items-center space-x-4">
+                  <div className="flex items-center space-x-2">
                     <span className="relative flex h-16 w-16 overflow-hidden rounded-full">
                       <Image
-                        className="aspect-square h-full w-full object-cover"
+                        className="aspect-square h-auto w-full object-cover"
                         src={profile.imageUrl}
                         alt={profile.name}
-                        width={68}
-                        height={68}
+                        width={300}
+                        height={300}
                       />
                     </span>
                     <div>
@@ -55,7 +59,7 @@ export default function Objectives({ missionTitle, missionContent, profile }: Ob
                 </div>
 
                 {/* Personal Vision / About */}
-                <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
+                <p className="text-gray-700 italic border-l-2 pl-4 dark:text-gray-300 leading-relaxed">
                   {profile.about}
                 </p>
               </div>

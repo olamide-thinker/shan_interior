@@ -1,28 +1,79 @@
-import Image from "next/image";
-import { cardAbout } from "../../mockData/imageCard";
+"use client";
+/* eslint-disable @typescript-eslint/no-explicit-any */
+// // import Image from "next/image";
 
-const ImageCard = () => {
+// import { getProjects } from "../Comps/getCloudinaryData";
+import saveProjectsLocally from "@/lib/saveProjectsLocally";
+import { ProjectCard } from "../Comps/projectCard";
+import { useEffect, useState } from "react";
+
+type ProjectListProps = {
+  projectFolderPrefix: string;
+  isFull: boolean;
+};
+
+// const ProjectList = async ({
+//   projectFolderPrefix,
+//   isFull,
+// }: ProjectListProps) => {
+//   const projects = await getProjects(projectFolderPrefix);
+//   console.log("Projects:", projects);
+
+//   return (
+//     <div className="w-fit grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3   gap-6">
+//       {isFull
+//         ? projects.map((d, i) => (
+//             <div key={i} className="relative w-full max-w-md">
+//               <ProjectCard details={d} />
+//             </div>
+//           ))
+//         : projects.slice(0, 3).map((d, i) => (
+//             <div key={i} className="relative w-full max-w-md">
+//               <ProjectCard details={d} />
+//             </div>
+//           ))}
+//     </div>
+//   );
+// };
+
+// export default ProjectList;
+const ProjectList = ({ projectFolderPrefix, isFull }: ProjectListProps) => {
+  const [projects, setProjects] = useState<any[]>([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const fetchProjects = async () => {
+      try {
+        // Fetch or load projects data locally
+        const projectsData = await saveProjectsLocally(projectFolderPrefix);
+        setProjects(projectsData);
+      } catch (error) {
+        console.error("Error fetching or loading projects:", error);
+      } finally {
+        setLoading(false); // Set loading to false once data is fetched
+      }
+    };
+
+    fetchProjects();
+  }, [projectFolderPrefix]);
+
+  if (loading) return <div>Loading projects...</div>;
+
   return (
-    <div className="w-full  flex flex-wrap gap-6">
-      {cardAbout.map((card, index) => (
-        <div key={index} className="relative w-full max-w-md">
-          {/* Background Image */}
-          <Image
-            src={card.imageSrc}
-            alt={card.altText}
-            width={1259}
-            height={400}
-            className="rounded-lg object-cover"
-          />
-
-          {/* Overlay */}
-          <div className="absolute bottom-4 left-4 right-4  bg-transparent border-2 border-s-white text-white p-4 rounded-md">
-            <p className="text-sm">{card.desc}</p>
-          </div>
-        </div>
-      ))}
+    <div className="w-fit grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      {isFull
+        ? projects.map((d, i) => (
+            <div key={i} className="relative w-full max-w-md">
+              <ProjectCard details={d} />
+            </div>
+          ))
+        : projects.slice(0, 3).map((d, i) => (
+            <div key={i} className="relative w-full max-w-md">
+              <ProjectCard details={d} />
+            </div>
+          ))}
     </div>
   );
 };
 
-export default ImageCard;
+export default ProjectList;

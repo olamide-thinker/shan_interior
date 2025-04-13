@@ -1,31 +1,30 @@
 import HeaderTitle from "@/components/HOC/headerProp";
-import ImageCard from "@/components/Cards/Card";
+import ProjectList from "@/components/Cards/Card";
 import GridLayout from "@/components/Cards/CardService";
 import BrandLogos from "@/components/Home/brandLogo";
 import TeamGrid from "@/components/Home/teamMembers";
 import TestimonialCarousel from "@/components/Home/testimonials";
 import VideoPlayer from "@/components/Home/video";
 import Contact from "@/components/Home/contact";
-import Footer from "@/components/footer";
 import Hero from "@/components/header";
 import ProcessTimeline from "@/components/Home/process";
 
-
-export default function Home() {
+export default async function Home() {
   return (
     <div className="min-h-screen">
       {/* Top Contact Bar */}
-      <Hero/>
-      
+      <Hero />
+
       {/* Who Section */}
-      <section className="about p-6 md:p-10 flex flex-col gap-6">
+      {/* <section className="about p-6 md:p-10 flex flex-col gap-6">
         <HeaderTitle
           title="Who we are"
           heading="Transforming spaces"
           subHeading="since 2017..."
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. " />
-        <ImageCard />
-      </section>
+          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. "
+        />
+        <ProjectList />
+      </section> */}
 
       {/* Our Service */}
       <section id="about" className="about p-6 md:p-10 flex flex-col gap-6">
@@ -33,27 +32,33 @@ export default function Home() {
           title="Our Service"
           heading="Why you should try "
           subHeading="Shan Interiors"
-          description="Our passion for creating beautiful and functional spaces that reflect the uniqueness of our clients sets us apart. Here's a glimpse of what we can do for you. " />
+          description="At Shan Interiors, we bring your dream spaces to life with precision, creativity, and expertise. From 3D conceptualization to project execution, we handle every stage of interior design, ensuring a seamless transition from vision to reality."
+        />
         <GridLayout />
       </section>
 
-       {/* Our Brands*/}
-       <section id="brands" className="brands p-6 md:p-10 flex flex-col gap-6">
-        <BrandLogos/>
+      {/* Our Brands*/}
+      <section id="brands" className="brands p-6 md:p-10 flex flex-col gap-6">
+        <BrandLogos />
       </section>
 
       {/* projects */}
-      <section id="projects" className="project p-6 md:p-10 flex flex-col gap-6">
+      <section
+        id="projects"
+        className="project p-6 md:p-10 flex flex-col gap-6"
+      >
         <HeaderTitle
           title="Interior Design Projects"
           heading="Crafting Exceptional"
           subHeading="Space with Purpose"
-          description="We begin with a thorough consultation to understand your vision, requirements, and budget for the project. This discussion allows us to align our approach with your expectations and goals. " 
+          description="We begin with a thorough consultation to understand your vision, requirements, and budget for the project. This discussion allows us to align our approach with your expectations and goals. "
           button="Explore"
-          />
-         <ImageCard />
+        />
+        <ProjectList
+          projectFolderPrefix={"shanInteriorsProjects/interior projects"}
+          isFull={false}
+        />
       </section>
-
 
       {/* projects */}
       <section className="project-3D p-6 md:p-10 flex flex-col gap-6">
@@ -61,27 +66,26 @@ export default function Home() {
           title="3D Design Projects"
           heading="Crafting Exceptional"
           subHeading="Space with Purpose"
-          description="We begin with a thorough consultation to understand your vision, requirements, and budget for the project. This discussion allows us to align our approach with your expectations and goals. " 
+          description="We begin with a thorough consultation to understand your vision, requirements, and budget for the project. This discussion allows us to align our approach with your expectations and goals. "
           button="Explore"
-          />
-         <ImageCard />
+        />
+        <ProjectList
+          projectFolderPrefix={"shanInteriorsProjects/project_3d"}
+          isFull={false}
+        />
       </section>
 
       {/* projects */}
-      <section className="project-3D p-6 md:p-10 flex flex-col gap-6">
+      <section className="project-3D p-6 md:p-10 flex flex-col gap-6 hover:shadow-2xl rounded-lg transition-all duration-300">
         <HeaderTitle
           title="Meet the team"
           heading="Meet the Experts Who"
           subHeading="Bring Spaces to Life"
-          description="We begin with a thorough consultation to understand your vision, requirements, and budget for the project. This discussion allows us to align our approach with your expectations and goals. " 
+          description="We begin with a thorough consultation to understand your vision, requirements, and budget for the project. This discussion allows us to align our approach with your expectations and goals. "
           button="Explore"
-          />
-         <TeamGrid/>
+        />
+        <TeamGrid />
       </section>
-
-      
-
-
 
       {/* Our works */}
       <section className="how-we-work p-6 md:p-10 flex flex-col gap-6">
@@ -89,51 +93,31 @@ export default function Home() {
           title="How we work"
           heading="From Vision to"
           subHeading="Reality is our Process"
-          description="At Shan Interiors, we're passionate about creating spaces that inspire and delight. With our unique approach to design, unparalleled creativity, and unwavering commitment to excellence, we're here to help you bring your vision to life in stunning style. " 
-          />
+          description="At Shan Interiors, we believe in creating timeless, elegant interiors that reflect your style and enhance your lifestyle. Our collaborative approach, attention to detail, and commitment to excellence set us apart, making us your trusted partner in bringing your interior design dreams to life."
+        />
 
-          <ProcessTimeline/>
+        <ProcessTimeline />
       </section>
 
-
-       {/* Our works */}
-       <section className="project-3D p-6 md:p-10 flex flex-col gap-6">
+      {/* Our works */}
+      <section className="project-3D p-6 md:p-10 flex flex-col gap-6">
         <HeaderTitle
           title="Testimonials"
           heading="Trust by Over"
           subHeading="7k Satisfied Client"
-          description="Shan Interiors has transformed businesses, homes, and tech spaces into elegant, functional environments for an enhanced experience. " 
+          description="Shan Interiors has transformed businesses, homes, and tech spaces into elegant, functional environments for an enhanced experience. "
           button="Get in touch"
-          />
-         <TestimonialCarousel/>
+        />
+        <TestimonialCarousel />
       </section>
 
       <section className="project-3D p-6 md:p-10 flex flex-col gap-6">
-
-        <VideoPlayer/>
-
+        <VideoPlayer />
       </section>
 
       <section className=" project-3D p-6 md:p-10 flex flex-col gap-6">
-
-        <Contact/>
-
+        <Contact />
       </section>
-
-      <section className=" project-3D  flex flex-col gap-6">
-
-        <Footer/>
-
-      </section>
-
-
-
-
-
-
-
-
-      
     </div>
   );
 }

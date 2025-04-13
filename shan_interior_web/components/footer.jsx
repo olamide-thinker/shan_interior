@@ -7,7 +7,7 @@ import {
   FaLinkedin,
   FaYoutube,
 } from "react-icons/fa";
-import logo from "../assets/header/Shan-white.png";
+import logo from "../assets/header/Shan_Interiors_Logo_white.svg";
 
 const Footer = () => {
   return (
@@ -26,10 +26,16 @@ const Footer = () => {
       <div className="relative z-10  max-w-6xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
         {/* Left Section - Logo & Description */}
         <div className="flex flex-col items-center sm:items-start  ">
-          <Image src={logo} alt="Shan" className="w-32 md:w-auto" />
-          <p className="text-gray-400 mt-3 text-center sm:text-left">
+          <Image
+            src={logo}
+            height={500}
+            width={500}
+            alt="Shan"
+            className="w-32 md:w-40"
+          />
+          {/* <p className="text-gray-400 mt-3 text-center sm:text-left">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
-          </p>
+          </p> */}
 
           {/* Social Icons */}
           <div className="flex space-x-4 mt-4">
