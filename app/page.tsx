@@ -114,10 +114,10 @@ export default async function Home() {
       <section className="project-3D p-6 md:p-10 flex flex-col gap-6">
         <VideoPlayer />
       </section>
-
+      {/* 
       <section className=" project-3D p-6 md:p-10 flex flex-col gap-6">
         <Contact />
-      </section>
+      </section> */}
     </div>
   );
 }
