@@ -35,7 +35,7 @@ export default function RootLayout({
         {children}
 
         {/* footer */}
-        <section className=" project-3D  flex flex-col gap-6 mt-10">
+        <section className=" project-3D  flex flex-col gap-6 ">
           <Footer />
         </section>
       </body>

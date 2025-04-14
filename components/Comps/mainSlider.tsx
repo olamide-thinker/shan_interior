@@ -49,13 +49,15 @@ export const MainSlider = ({
   return (
     <div className="flex w-full h-[90vh]   flex-col sm:flex-row  justify-between ">
       <div className="relative w-full  flex">
-        <Image
-          src={selectedImage || content.images[0].image}
-          alt={""}
-          width={3000}
-          height={3000}
-          className="object-fill object-center w-full sm:h-[90vh]"
-        />
+        <div className="sm:h-[90vh] flex items-center justify-center w-full overflow-hidden bg-secondary">
+          <Image
+            src={selectedImage || content.images[0].image}
+            alt={""}
+            width={3000}
+            height={3000}
+            className="object-contain object-center w-full h-full "
+          />
+        </div>
 
         <div className="flex absolute top-[50%] justify-between w-[100%] items-center p-4">
           <Button

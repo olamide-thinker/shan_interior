@@ -9,7 +9,7 @@ import imageOne from "../../assets/teams/founder_shan.png";
 const Page = () => {
   return (
     <div>
-      <div className="bg-[#f7f3ed] min-h-fit py-24 flex flex-col px-6">
+      <div className="bg-[#f7f3ed] min-h-fit pt-24 flex flex-col px-6">
         <section className="flex flex-col justify-center items-center ">
           {/* Hero Content */}
           <div className="flex flex-col text-center max-w-2xl w-full py-6 flex-grow">
@@ -62,7 +62,7 @@ const Page = () => {
         </div>
       </section>
 
-      <section className=" project-3D bg-[#f7f3ed]  flex flex-col gap-6 px-6 mt-10 ">
+      <section className=" project-3D py-8 bg-[#f7f3ed]  flex flex-col gap-6 px-6 mt-10 ">
         <HeaderTitle
           title=""
           heading=""
@@ -72,11 +72,6 @@ const Page = () => {
         />
 
         <ValueCard />
-      </section>
-
-      {/* footer */}
-      <section className=" project-3D  flex flex-col gap-6 mt-10">
-        <Footer />
       </section>
     </div>
   );
