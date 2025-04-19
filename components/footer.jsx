@@ -8,10 +8,14 @@ import {
   FaYoutube,
 } from "react-icons/fa";
 import logo from "../assets/header/Shan_Interiors_Logo_white.svg";
+import ContactMenu from "@/lib/ContactMenu";
 
 const Footer = () => {
   return (
     <footer className="bg-black text-white py-10 relative">
+      <div className="w-fit fixed bottom-5 right-5 z-50">
+        <ContactMenu />
+      </div>
       {/* Background Overlay */}
       <div className="absolute inset-0 opacity-20">
         <Image
