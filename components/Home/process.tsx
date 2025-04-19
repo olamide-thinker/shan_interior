@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import { steps } from "../../mockData/steps";
+import Image from "next/image";
 
 // Define TypeScript Type for a Step
 type Step = {
@@ -38,6 +39,10 @@ const ProcessTimeline: React.FC = () => {
             <p className="text-sm text-gray-600 mt-2">{step.description}</p>
           </div>
         ))}
+
+        {/* <div>
+          <Image src={} />
+        </div> */}
       </div>
     </div>
   );

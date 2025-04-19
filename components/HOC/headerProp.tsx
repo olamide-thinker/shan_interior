@@ -40,7 +40,7 @@ const HeaderTitle: React.FC<HeaderTitleProps> = ({
             {description}{" "}
             {button && (
               <span className="underline font-bold  text-primary">
-                <Link href={"#"}>Explore our {title}</Link>
+                <Link href={"#"}>Explore More {title}</Link>
               </span>
             )}
           </p>

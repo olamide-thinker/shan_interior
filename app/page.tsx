@@ -14,7 +14,7 @@ export default async function Home() {
   return (
     <div className="min-h-screen">
       {/* Top Contact Bar */}
-      <HeroSlider />
+      {/* <HeroSlider /> */}
       <Hero />
 
       {/* Who Section */}
@@ -84,7 +84,7 @@ export default async function Home() {
           heading="Meet the Experts Who"
           subHeading="Bring Spaces to Life"
           description="We begin with a thorough consultation to understand your vision, requirements, and budget for the project. This discussion allows us to align our approach with your expectations and goals. "
-          button="Explore"
+          // button="Explore"
         />
         <TeamGrid />
       </section>
