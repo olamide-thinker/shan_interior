@@ -12,14 +12,14 @@ export default function ContactMenu() {
   return (
     <div
       onMouseLeave={() => setIsOpen(false)}
-      className="relative inline-block"
+      className="relative inline-block group"
     >
       {/* Trigger Button */}
       <button
         aria-haspopup="true"
         aria-expanded={isOpen}
         onClick={() => setIsOpen(!isOpen)}
-        className="w-15 h-25 md:w-20 md:h-20 p-0 bg-white border overflow-hidden border-black shadow-md group rounded-2xl focus:outline-none focus:ring-2 focus:ring-black relative"
+        className="w-15 h-25 md:w-20 md:h-20 p-0 bg-white border overflow-hidden border-black shadow-md rounded-2xl focus:outline-none focus:ring-2 focus:ring-black relative"
       >
         <p className="absolute bg-black text-white font-semibold bottom-0 text-xs py-1 text-center w-full">
           Contact Us
