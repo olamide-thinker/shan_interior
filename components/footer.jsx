@@ -42,11 +42,11 @@ const Footer = () => {
           </p> */}
 
           {/* Social Icons */}
-          <div className="flex space-x-4 mt-4">
+          {/* <div className="flex space-x-4 mt-4">
             <Link href="#">
               <FaPinterest className="text-white hover:text-gray-400 text-2xl" />
             </Link>
-            <Link href="#">
+            <Link href="https://www.instagram.com/shaninteriors/">
               <FaInstagram className="text-white hover:text-gray-400 text-2xl" />
             </Link>
             <Link href="#">
@@ -55,7 +55,7 @@ const Footer = () => {
             <Link href="#">
               <FaYoutube className="text-white hover:text-gray-400 text-2xl" />
             </Link>
-          </div>
+          </div>*/}
         </div>
 
         {/* Middle Section - Navigation */}

@@ -8,11 +8,13 @@ import VideoPlayer from "@/components/Home/video";
 import Contact from "@/components/Home/contact";
 import Hero from "@/components/header";
 import ProcessTimeline from "@/components/Home/process";
+import { HeroSlider } from "@/components/heroSlider";
 
 export default async function Home() {
   return (
     <div className="min-h-screen">
       {/* Top Contact Bar */}
+      <HeroSlider />
       <Hero />
 
       {/* Who Section */}
