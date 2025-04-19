@@ -19,7 +19,7 @@ export default function ContactMenu() {
         aria-haspopup="true"
         aria-expanded={isOpen}
         onClick={() => setIsOpen(!isOpen)}
-        className="w-20 h-20 p-0 bg-white border overflow-hidden border-black shadow-md group rounded-2xl focus:outline-none focus:ring-2 focus:ring-black relative"
+        className="w-15 h-25 md:w-20 md:h-20 p-0 bg-white border overflow-hidden border-black shadow-md group rounded-2xl focus:outline-none focus:ring-2 focus:ring-black relative"
       >
         <p className="absolute bg-black text-white font-semibold bottom-0 text-xs py-1 text-center w-full">
           Contact Us
@@ -36,7 +36,7 @@ export default function ContactMenu() {
       {/* Contact Modal */}
       {isOpen && (
         <div
-          className="absolute z-50 bg-[#F5F5F0] text-[#333] w-72 sm:w-80 flex flex-col p-5 ml-4 border border-gray-300 shadow-xl bottom-3 right-full rounded-xl transition-transform transform translate-x-0 translate-y-0"
+          className="absolute z-50 bg-[#F5F5F0] text-[#333] w-72 sm:w-80 flex flex-col p-5 ml-4 border border-gray-300 shadow-xl bottom-14 md:bottom-3 right-8 md:right-full  rounded-xl transition-transform transform translate-x-0 translate-y-0"
           role="dialog"
           aria-label="Contact Options"
         >
