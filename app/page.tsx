@@ -53,7 +53,7 @@ export default async function Home() {
           title="Interior Design Projects"
           heading="Crafting Exceptional"
           subHeading="Space with Purpose"
-          description="We begin with a thorough consultation to understand your vision, requirements, and budget for the project. This discussion allows us to align our approach with your expectations and goals. "
+          description="We offer tailored interior design services that blend high-end aesthetics with smart budgeting—so you get exceptional spaces without overspending."
           button="Explore"
         />
         <ProjectList
@@ -68,7 +68,7 @@ export default async function Home() {
           title="3D Design Projects"
           heading="Crafting Exceptional"
           subHeading="Space with Purpose"
-          description="We begin with a thorough consultation to understand your vision, requirements, and budget for the project. This discussion allows us to align our approach with your expectations and goals. "
+          description="Experience your future space before it’s built. Our 3D design service transforms your ideas into immersive visuals, giving you clarity and confidence every step of the way."
           button="Explore"
         />
         <ProjectList
@@ -83,7 +83,7 @@ export default async function Home() {
           title="Meet the team"
           heading="Meet the Experts Who"
           subHeading="Bring Spaces to Life"
-          description="We begin with a thorough consultation to understand your vision, requirements, and budget for the project. This discussion allows us to align our approach with your expectations and goals. "
+          description="Behind every space we design is a team of passionate creatives and detail-obsessed professionals, all dedicated to bringing your vision to life with skill, style, and heart. "
           // button="Explore"
         />
         <TeamGrid />
