@@ -100,7 +100,7 @@ export default async function Home() {
       </section>
 
       {/* Our works */}
-      <section className="project-3D p-6 md:p-10 flex flex-col gap-6">
+      {/* <section className="project-3D p-6 md:p-10 flex flex-col gap-6">
         <HeaderTitle
           title="Testimonials"
           heading="Trust by Over"
@@ -109,11 +109,11 @@ export default async function Home() {
           button="Get in touch"
         />
         <TestimonialCarousel />
-      </section>
+      </section> */}
 
-      <section className="project-3D p-6 md:p-10 flex flex-col gap-6">
+      {/* <section className="project-3D p-6 md:p-10 flex flex-col gap-6">
         <VideoPlayer />
-      </section>
+      </section> */}
       {/* 
       <section className=" project-3D p-6 md:p-10 flex flex-col gap-6">
         <Contact />

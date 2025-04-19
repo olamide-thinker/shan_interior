@@ -11,7 +11,7 @@ const Page = () => {
   return (
     <div>
       <div className="bg-[#f7f3ed] min-h-screen flex flex-col ">
-        <section className="flex flex-col items-center overflow-hidden min-h-fit pt-60  ">
+        <section className="flex flex-col items-center overflow-hidden min-h-fit pt-30 md:pt-60  ">
           {/* Hero Content */}
           <div className="flex flex-col items-center text-center max-w-2xl w-full py-6 flex-grow">
             <p className="text-sm italic md:text-base font-medium">

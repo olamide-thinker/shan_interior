@@ -60,7 +60,7 @@ const GridLayout = () => {
       </p>
 
       {/* Grid Layout */}
-      <div className="grid  grid-cols-3 gap-6 mx-auto">
+      <div className="grid grid-cols-1  md:grid-cols-3 gap-6 mx-auto">
         {gridBoxes.map((box) => (
           <div
             key={box.id}

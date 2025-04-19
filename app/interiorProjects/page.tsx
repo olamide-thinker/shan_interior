@@ -13,7 +13,7 @@ import ProjectList from "@/components/Cards/Card";
 const Page = async () => {
   return (
     <div>
-      <div className="bg-[#eef5f4] min-h-screen flex flex-col px-6 ">
+      <div className="bg-[#eef5f4] md:min-h-screen h-[70vh] flex flex-col px-6 ">
         <section className="flex flex-col justify-center items-center overflow-hidden min-h-fit py-24  ">
           {/* <div className="bg-[#f7f3ed] min-h-fit py-24 flex flex-col px-6"> */}
           {/* Hero Content */}
@@ -34,7 +34,7 @@ const Page = async () => {
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p> */}
           </div>
-          <div className="flex absolute -bottom-20 z-0 items-center justify-center ">
+          <div className="flex absolute bottom-0 h-full md:h-fit  md:-bottom-20 z-0 items-center justify-center ">
             {/* Hero Image */}
             <Image
               src={heroImage}
