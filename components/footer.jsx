@@ -16,7 +16,7 @@ const Footer = () => {
       <div className="w-fit fixed bottom-5 right-5 z-50">
         <ContactMenu />
       </div>
-      {/* Background Overlay */}
+      {/* Background Overlay
       <div className="absolute inset-0 opacity-20">
         <Image
           src="/assets/footer-bg.png" // Update with your background image path
@@ -24,7 +24,7 @@ const Footer = () => {
           layout="fill"
           objectFit="cover"
         />
-      </div>
+      </div> */}
 
       {/* Footer Content */}
       <div className="relative z-10  max-w-6xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">

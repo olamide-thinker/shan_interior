@@ -63,6 +63,9 @@ const Hero = () => {
     >
       {/* Background Image */}
       <Image
+        priority
+        height={3000}
+        width={3000}
         src={images[currentIndex]} // Dynamically switch images based on index
         className="absolute hero top-0 left-0 w-full h-full object-cover"
         alt="hero-bg"
