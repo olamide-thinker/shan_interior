@@ -14,10 +14,12 @@ import {
 } from "../ui/alert-dialog";
 import { AiOutlineClose } from "react-icons/ai";
 import { MainSlider } from "./mainSlider";
+import { CircleLoader } from "react-spinners";
 
 export const ProjectCard = ({ details }: { details: Project_type }) => {
   const [hovering, setHovering] = React.useState(false);
   const [dialogOpen, setDialogOpen] = React.useState(false);
+  const [imageLoading, setImageLoading] = React.useState(true);
 
   const content = {
     // imagesId:id,
@@ -43,21 +45,31 @@ export const ProjectCard = ({ details }: { details: Project_type }) => {
       <div
         className=" rounded-lg overflow-x-hidden hover:shadow max-h-fit  relative  group"
         onMouseOut={() => setHovering(false)}
-        // onTouchStart={()=> setHovering(!hovering)}
         onTouchStartCapture={() => setHovering(hovering)}
         onMouseOver={() => setHovering(true)}
         onMouseLeave={() => setHovering(false)}
         onDoubleClick={handleDoubleClick}
       >
-        {/* Background image */}
-
-        <Image
-          className="object-cover h-[500px]"
-          src={content.coverImage}
-          alt=""
-          height={2000}
-          width={3000}
-        />
+        <div className="relative">
+          {(imageLoading || !content.coverImage || content.coverImage === "") && (
+            <div className={'absolute h-[500px] w-full bg-black/50 z-20 flex justify-center items-center'}>
+              <CircleLoader
+                size={50}
+                color="#ffffff"
+                loading={true}
+              />
+            </div>
+          )}
+          <Image
+            className="object-cover h-[500px]"
+            src={content.coverImage || ""}
+            alt={content.title || ""}
+            height={2000}
+            width={3000}
+            onLoadingComplete={() => setImageLoading(false)}
+            onError={() => setImageLoading(false)}
+          />
+        </div>
 
         {/* Foreground text */}
         {hovering && (
@@ -79,7 +91,7 @@ export const ProjectCard = ({ details }: { details: Project_type }) => {
           {/* View the Project button with pointer cursor and hover effects */}
           <button
               onClick={handleViewProject}
-              className="inline-flex items-center justify-center px-4 py-2 bg-white text-black
+              className="inline-flex items-center shadow justify-center px-4 py-2 bg-white text-black
                      rounded-md font-medium cursor-pointer transition-all duration-200
                      hover:bg-gray-100 hover:scale-105 active:scale-95"
           >

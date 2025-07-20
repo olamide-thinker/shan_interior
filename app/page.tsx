@@ -47,7 +47,7 @@ export default async function Home() {
       {/* projects */}
       <section
         id="projects"
-        className="project p-6 md:p-10 flex flex-col gap-6"
+        className=" max-w-[2400px] mx-auto  project p-6 md:p-10 flex flex-col gap-6"
       >
         <HeaderTitle
           title="Interior Design Projects"
@@ -63,7 +63,7 @@ export default async function Home() {
       </section>
 
       {/* projects */}
-      <section className="project-3D p-6 md:p-10 flex flex-col gap-6">
+      <section className=" max-w-[2400px] mx-auto project-3D p-6 md:p-10 flex flex-col gap-6">
         <HeaderTitle
           title="3D Design Projects"
           heading="Crafting Exceptional"
@@ -78,7 +78,7 @@ export default async function Home() {
       </section>
 
       {/* projects */}
-      <section className="project-3D p-6 md:p-10 flex flex-col gap-6 hover:shadow-2xl rounded-lg transition-all duration-300">
+      <section className=" max-w-[2400px] mx-auto project-3D p-6 md:p-10 flex flex-col gap-6 hover:shadow-2xl rounded-lg transition-all duration-300">
         <HeaderTitle
           title="Meet the team"
           heading="Meet the Experts Who"
@@ -90,7 +90,7 @@ export default async function Home() {
       </section>
 
       {/* Our works */}
-      <section className="how-we-work p-6 md:p-10 flex flex-col gap-6">
+      <section className=" max-w-[2400px] mx-auto how-we-work p-6 md:p-10 flex flex-col gap-6">
         <HeaderTitle
           title="How we work"
           heading="From Vision to"

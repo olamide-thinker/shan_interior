@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import { CircleLoader } from "react-spinners";
 import design from "../../assets/home/services/design.png";
 import space from "../../assets/home/services/space.png";
 import woman from "../../assets/home/services/woman.png";
@@ -79,6 +80,38 @@ const GridLayout: React.FC = () => {
           </div>
         </div>
       ))}
+    </div>
+  );
+};
+
+export const CardService = ({
+  className,
+  children,
+  image,
+  text,
+  description,
+}: CardService_Props) => {
+  const [imageLoading, setImageLoading] = React.useState(true);
+
+  return (
+    <div className={className}>
+      <div className="relative h-[250px] w-full overflow-hidden rounded-lg">
+        {imageLoading && (
+          <div className={"absolute h-full w-full bg-black/50 z-30 flex justify-center items-center"}>
+            <CircleLoader size={50} color="#ffffff" loading={true} />
+          </div>
+        )}
+        <Image
+          src={image}
+          alt=""
+          width={1000}
+          height={1000}
+          className="w-full h-full object-cover"
+          onLoadingComplete={() => setImageLoading(false)}
+          onError={() => setImageLoading(false)}
+        />
+      </div>
+      {children}
     </div>
   );
 };

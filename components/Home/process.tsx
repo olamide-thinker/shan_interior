@@ -21,7 +21,7 @@ const ProcessTimeline: React.FC = () => {
             key={step.id}
             className={`relative  shadow-lg rounded-xl p-6 transition-transform border cursor-default
               hover:scale-110 hover:rotate-0 hover:ring-2 ring-black transform ${
-                index % 2 === 0 ? "rotate-3 bg-secondary" : "-rotate-3 bg-white"
+                index % 2 === 0 ? "rotate-3 bg-background" : "-rotate-3 bg-white"
               }`}
           >
             {/* Step Label */}
@@ -33,10 +33,10 @@ const ProcessTimeline: React.FC = () => {
             <div className="w-full h-40 md:h-48 lg:h-56 bg-gray-200 rounded-lg mb-4"></div> */}
 
             {/* Title & Description */}
-            <h3 className="text-lg font-semibold text-gray-800">
+            <h3 className="text-3xl font-semibold text-gray-800">
               {step.title}
             </h3>
-            <p className="text-sm text-gray-600 mt-2">{step.description}</p>
+            <p className="text-gray-600 mt-2">{step.description}</p>
           </div>
         ))}
 

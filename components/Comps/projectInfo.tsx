@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import {CircleLoader} from "react-spinners";
 
 export const ProjectInfo = ({
   content,
@@ -15,7 +16,7 @@ export const ProjectInfo = ({
     }[];
   };
 }) => {
-  console.log("123", content);
+  const [imageLoading, setImageLoading] = React.useState<{[key: number]: boolean}>({});
 
   return (
     <div className="flex relative flex-col gap-4  items-center z-50 bg-black/30 m-8 shadow bg-blend-multiply p-4 rounded-2xl mb-16">
@@ -38,12 +39,27 @@ export const ProjectInfo = ({
                     +{content.images.length + 1 - 4}
                   </p>
                 )}
+                {(imageLoading[i] || !imageDetails.image) && (
+                  <div className={'absolute h-full w-full bg-black/50 z-30 flex justify-center items-center'}>
+                    <CircleLoader
+                      size={30}
+                      color="#ffffff"
+                      loading={true}
+                    />
+                  </div>
+                )}
                 <Image
-                  src={imageDetails?.image}
+                  src={imageDetails?.image || ""}
                   alt="HeroImage"
                   width={1000}
                   height={1000}
-                  className="h-full w-full object-cover rounded-lg aspect-square "
+                  className="h-full w-full object-cover rounded-lg aspect-square"
+                  onLoadingComplete={() => {
+                    setImageLoading(prev => ({...prev, [i]: false}));
+                  }}
+                  onLoad={() => {
+                    setImageLoading(prev => ({...prev, [i]: true}));
+                  }}
                 />
               </div>
             )}

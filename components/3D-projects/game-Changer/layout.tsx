@@ -11,32 +11,32 @@ import layout from "@/assets/3dprojects/gridIcons/layout.png";
 const gridBoxes = [
   {
     id: 1,
-    bgColor: "bg-[#80011f]",
+    bgColor: "bg-[#e1ece4]",
     img: build,
     title: "Visualize Before You Build",
     text: "Avoid guesswork—visualize your space in 3D before making decisions. No more costly surprises or last-minute changes.",
     rowSpan: "row-span-3",
-    textColor: "text-white",
+    textColor: "text-gray-800",
     flag: "col",
   },
   {
     id: 2,
-    bgColor: "bg-[#ecdcbb]",
+    bgColor: "bg-[#e1ece4]",
     img: layout,
     title: "",
     text: "Test layouts, colors, and materials in real time..",
     rowSpan: "row-span-2",
-    textColor: "text-[#afa99d]", // Dark text for better
+    textColor: "text-gray-800", // Dark text for better
     flag: "col-reverse",
   },
   {
     id: 3,
-    bgColor: "bg-[#f39227]",
+    bgColor: "bg-[#e1ece4]",
     img: rating,
     title: "Immersive Experience",
     text: "Once finalized, easily export your design in multiple formats for contractors and suppliers, ensuring precision in implementation.",
     rowSpan: "row-span-4",
-    textColor: "text-white",
+    textColor: "text-gray-800",
     flag: "col",
   },
   {
@@ -60,19 +60,21 @@ const GridLayout = () => {
       </p>
 
       {/* Grid Layout */}
-      <div className="grid grid-cols-1  md:grid-cols-3 gap-6 mx-auto">
+      <div className="flex  flex-col sm:flex-row gap-4 ">
         {gridBoxes.map((box) => (
           <div
             key={box.id}
-            className={`${box.bgColor} ${box.rowSpan} flex-${box.flag} rounded-2xl p-6 flex  justify-center min-h-full items-center  gap-3 shadow-md `}
+            className={`${box.bgColor} ${box.rowSpan}  mb-2 rounded-2xl p-4 min-h-fit sm:min-h-full border border-red flex  justify-center  items-center  gap-3 shadow-md `}
           >
+            <div className={'flex items-center justify-between  gap-4'}>
+
             {/* Image */}
             <Image
               src={box.img}
-              className=""
+              className="w-auto h-[50px] object-contain"
               alt={box.title}
               width={250}
-              height={40}
+              height={400}
             />
 
             {/* Title */}
@@ -85,6 +87,7 @@ const GridLayout = () => {
               <p className={`text-sm opacity-90 font-bold ${box.textColor}`}>
                 {box.text}
               </p>
+            </div>
             </div>
           </div>
         ))}
