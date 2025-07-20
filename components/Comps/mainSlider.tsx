@@ -18,6 +18,7 @@ import ClipLoader from "react-spinners/ClipLoader";
 
 export const MainSlider = ({
   content,
+  showOpenButton = true,
 }: {
   content: {
     title: string;
@@ -29,6 +30,7 @@ export const MainSlider = ({
       caption: string;
     }[];
   };
+  showOpenButton?: boolean;
 }) => {
   // const [imagePath, setImagePath] = React.useState('project1')
   const [selectedImage, setSelectedImage] = React.useState<string>(
@@ -87,6 +89,18 @@ export const MainSlider = ({
         <p className="flex gap-1 items-center bg-secondary p-1 w-fit rounded-lg pr-4">
           <TfiLocationPin /> {content.location}
         </p>
+        {showOpenButton && (
+          <Button 
+            onClick={() => {
+              // Create a shareable URL for this project
+              const projectUrl = `/project/${encodeURIComponent(content.title.toLowerCase().replace(/\s+/g, '-'))}`;
+              window.open(projectUrl, '_blank');
+            }}
+            className="w-full bg-primary text-primary-foreground hover:bg-primary/90"
+          >
+            Open in New Page
+          </Button>
+        )}
         <ScrollArea className=" w-full sm:h-full max-h-[82%] p-1 ">
           <p>{content.description}</p>
 
