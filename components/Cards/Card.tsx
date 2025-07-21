@@ -89,6 +89,9 @@ const ProjectList = ({ projectFolderPrefix, isFull }: ProjectListProps) => {
   );
 };
 
+
+
+
 export const Card = ({ href, image, text, className }: any) => {
   const [imageLoading, setImageLoading] = React.useState(true);
 
@@ -110,8 +113,8 @@ export const Card = ({ href, image, text, className }: any) => {
           width={1000}
           height={1000}
           className="w-full h-full object-cover"
-          onLoadingComplete={() => setImageLoading(false)}
-          onError={() => setImageLoading(false)}
+          // onLoadingComplete={() => setImageLoading(false)}
+          // onError={() => setImageLoading(false)}
         />
       </div>
       <div className="p-4">

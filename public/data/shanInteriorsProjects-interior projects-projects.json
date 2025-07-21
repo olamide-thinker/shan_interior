@@ -179,6 +179,11 @@
     "description": "",
     "images": [
       {
+        "Image_id": "farouk_featured_image_efm2wz",
+        "image": "https://res.cloudinary.com/dy4rxwp5y/image/upload/v1753047730/shanInteriorsProjects/interior%20projects/5%20WB%20FAROUK/farouk_featured_image_efm2wz.jpg",
+        "caption": "farouk featured image efm2wz"
+      },
+      {
         "Image_id": "VBE_9_dihcyr",
         "image": "https://res.cloudinary.com/dy4rxwp5y/image/upload/v1744508567/shanInteriorsProjects/interior%20projects/5%20WB%20FAROUK/VBE_9_dihcyr.jpg",
         "caption": "VBE 9 dihcyr"
@@ -672,11 +677,6 @@
         "Image_id": "VBE_10_h3mr2i",
         "image": "https://res.cloudinary.com/dy4rxwp5y/image/upload/v1744508822/shanInteriorsProjects/interior%20projects/5%20WB%20FAROUK/VBE_10_h3mr2i.jpg",
         "caption": "VBE 10 h3mr2i"
-      },
-      {
-        "Image_id": "VBE_109_maanlz",
-        "image": "https://res.cloudinary.com/dy4rxwp5y/image/upload/v1744508560/shanInteriorsProjects/interior%20projects/5%20WB%20FAROUK/VBE_109_maanlz.jpg",
-        "caption": "VBE 109 maanlz"
       }
     ]
   },
