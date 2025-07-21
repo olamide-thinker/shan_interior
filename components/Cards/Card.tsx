@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import { ProjectCard } from "../Comps/projectCard";
 import { CircleLoader } from "react-spinners";
 import { priorityProjects } from "@/config/priorityProjects";
+import Image from "next/image";
 import Link from "next/link";
 
 type ProjectListProps = {
@@ -89,17 +90,21 @@ const ProjectList = ({ projectFolderPrefix, isFull }: ProjectListProps) => {
   );
 };
 
+interface CardProps {
+  href: string;
+  image: string;
+  text: string;
+  className?: string;
+}
 
-
-
-export const Card = ({ href, image, text, className }: any) => {
-  const [imageLoading, setImageLoading] = React.useState(true);
+export const Card = ({ href, image, text, className }: CardProps) => {
+  const [imageLoading, setImageLoading] = useState(true);
 
   return (
     <Link href={href || ""} className={className}>
       <div className="relative overflow-hidden">
         {imageLoading && (
-          <div className={'absolute h-full w-full bg-black/50 z-30 flex justify-center items-center'}>
+          <div className="absolute h-full w-full bg-black/50 z-30 flex justify-center items-center">
             <CircleLoader
               size={50}
               color="#ffffff"
@@ -109,12 +114,12 @@ export const Card = ({ href, image, text, className }: any) => {
         )}
         <Image
           src={image}
-          alt=""
+          alt={text || ""}
           width={1000}
           height={1000}
-          className="w-full h-full object-cover"
-          // onLoadingComplete={() => setImageLoading(false)}
-          // onError={() => setImageLoading(false)}
+          className="object-cover w-full h-full"
+          onLoadingComplete={() => setImageLoading(false)}
+          onError={() => setImageLoading(false)}
         />
       </div>
       <div className="p-4">
