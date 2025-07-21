@@ -7,6 +7,14 @@ import woman from "../../assets/home/services/woman.png";
 import management from "../../assets/home/services/management.png";
 import chair from "../../assets/home/services/chair.png";
 
+interface CardService_Props {
+  className?: string;
+  children?: React.ReactNode;
+  image: string;
+  text: string;
+  description?: string;
+}
+
 const GridLayout: React.FC = () => {
   const data = [
     {
