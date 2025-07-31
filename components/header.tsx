@@ -14,6 +14,12 @@ const Hero = () => {
   const root = useRef(null);
   const scope = useRef<Scope | null>(null);
   const images = [herobg1, herobg3, herobg4, herobg5];
+  const headingTexts = [
+    "Designing Dreams. Building Realities.",
+    "Where Vision Meets Precision.",
+    "Inspired Spaces. Delivered Exceptionally.",
+    "Elevating Spaces. Defining Experiences."
+  ];
   const [currentIndex, setCurrentIndex] = useState(0); // State for image tracking
 
   useEffect(() => {
@@ -72,12 +78,12 @@ const Hero = () => {
       />
       {/* Hero Content */}
       <div className="absolute flex flex-col md:flex-row justify-between w-full left-0 bottom-[10%] md:bottom-[15%] px-6 md:px-10 z-20">
-        <div className="headline max-w-2xl text-center md:text-left">
+        <div className="headline max-w-3xl text-center md:text-left">
           <p className="text-white mt-4 heroText text-base italic md:text-lg leading-relaxed">
             Transforming spaces since 2017...
           </p>
           <h1 className="text-4xl md:text-6xl heroText font-bold text-white leading-tight">
-            Elevating Spaces, Realizing Visions
+            {headingTexts[currentIndex]}
           </h1>
           <p className="text-white mt-4 text-sm heroText md:text-lg leading-relaxed">
             From 3D Conceptualization to Flawless Execution, we bring your dream

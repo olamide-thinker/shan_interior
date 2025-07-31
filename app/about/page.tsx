@@ -40,8 +40,8 @@ const Page = () => {
         <Objectives
           missionTitle="Mission"
           missionContent={[
-            "To transform spaces into personalized sanctuaries that reflect the unique style and vision of each client, we blend innovative design solutions, cutting-edge technology, and impeccable craftsmanship. Our approach ensures that every space is not only visually stunning but also highly functional, comfortable, and meaningful.",
-            "By incorporating 3D visualization, sustainable materials, and bespoke design elements, we bring ideas to life with precision and creativity.",
+            "To transform spaces into distinctive environments that reflect personal style, purpose, and functionality.",
+            "We blend design artistry, innovation, and efficient execution to deliver interiors that inspire, uplift, and stand the test of time.",
           ]}
           profile={{
             name: "Michael Shanu",
@@ -55,8 +55,8 @@ const Page = () => {
           <Objectives
             missionTitle="Vision"
             missionContent={[
-              "To ba leading force in interior design, redefining spaces with innovation, elegance, and functionality. We envision a world where every home, office, and commercial space reflects its owner’s unique style while promoting comfort, creativity, and sustainability. ",
-              "Through cutting-edge 3D visualization and impeccable craftsmanship, we strive to turn imagination into reality—one space at a time.",
+              "To become Africa's most trusted and innovative interior design brand — setting the global standard in creativity, craftsmanship, and project excellence.",
+              "We envision a world where every space reflects the soul of its user and the sophistication of smart design.",
             ]}
           />
         </div>
@@ -67,7 +67,7 @@ const Page = () => {
           title=""
           heading=""
           subHeading="Core Values"
-          description="We begin with a thorough consultation to understand your vision, requirements, and budget for the project. This discussion allows us to align our approach with your expectations and goals. "
+          description="Our core values guide every project we undertake, ensuring consistent quality and client satisfaction. These principles define our approach to design, collaboration, and execution."
           button=""
         />
 

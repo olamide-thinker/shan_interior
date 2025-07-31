@@ -19,48 +19,47 @@ const GridLayout: React.FC = () => {
   const data = [
     {
       bg: design,
-      title: "Expert Professional Design",
+      title: "Transparent communication, end-to-end",
       content:
-        "Our design team is readily available to offer 3D renditions tailored to the unique ideas of our client.",
+        "We maintain open, honest dialogue throughout your project journey, providing regular updates, clear explanations, and responsive feedback channels that keep you informed and confident at every stage.",
     },
     {
       bg: space,
-      title: "Space Optimization",
+      title: "Clear timelines, efficient project delivery",
       content:
-        "Our space planning and optimization techniques transforms even the most challenging layouts into beautiful spaces.",
+        "We establish realistic schedules and milestones from day one, leveraging streamlined processes and expert resource management to complete your project on time and within budget, without compromising on quality or attention to detail.",
     },
     {
       bg: management,
-      title: "Design Management",
+      title: "Personalized, client-first designs",
       content:
-        "Our unique management of our client’s project from inception to final delivery ensures that our client’s vision is translated into reality within a set timeframe and budget.",
+        "We prioritize your preferences, lifestyle, and aspirations in every design decision, creating bespoke spaces that reflect your unique personality and meet your specific functional needs, ensuring the final result is distinctly yours and perfectly tailored to how you live.",
     },
     {
       bg: chair,
-      title: "Procurement",
+      title: "Future-ready materials & technologies",
       content:
-        "Our procurement service is your gateway to accessing the finest furniture and decor elements, meticulously curated to elevate your space to new heights of elegance and functionality.",
+        "We integrate cutting-edge sustainable materials and smart technologies that enhance both aesthetics and functionality, ensuring your space remains innovative, efficient, and ahead of design trends for years to come.",
     },
   ];
 
   return (
     <div className="grid grid-cols-1 sm:grid-cols-3 sm:grid-rows-4 gap-4 p-6 w-full h-[80rem] sm:h-[45rem] mx-auto">
       {/* Div 1 - Spans Full Height */}
-      <div className="relative sm:row-span-4 sm:col-span-1 flex items-center justify-center rounded-lg shadow-md text-white text-xl  p-6">
+      <div className="relative sm:row-span-4 sm:col-span-1 flex items-center justify-center rounded-lg shadow-md text-white text-xl p-6 group">
         <Image
           src={woman}
           alt="Div 1"
           fill
           className="absolute inset-0 w-full h-full object-cover rounded-lg"
         />
-        <div className="absolute inset-0 bg-black/20 bg-blend-multiply rounded-lg"></div>
+        <div className="absolute inset-0 bg-black/20 group-hover:bg-black/35 transition-colors duration-300 bg-blend-multiply rounded-lg"></div>
         <div className="absolute z-10 left-4 top-4 text-white">
           <p className="text-lg sm:text-xl md:text-2xl font-semibold mb-2">
-            Quick Consultation
+            Proven expertise across residential, commercial & hospitality spaces
           </p>
-          <p className="text-xs sm:text-sm md:text-sm w-72 sm:w-80">
-            Our team can provide swift guidance and personalized advice tailored
-            to your interior design needs.
+          <p className="text-xs sm:text-sm md:text-md w-72 sm:w-80">
+            With extensive experience designing for homes, offices, and hospitality venues, our portfolio showcases versatility and mastery across diverse environments and client requirements.
           </p>
         </div>
       </div>
@@ -69,7 +68,7 @@ const GridLayout: React.FC = () => {
       {data.map((a, i) => (
         <div
           key={i}
-          className="relative sm:row-span-2 sm:col-span-1 flex items-center justify-center rounded-lg shadow-md p-6"
+          className="relative sm:row-span-2 sm:col-span-1 flex items-center justify-center rounded-lg shadow-md p-6 group"
         >
           <Image
             src={a.bg}
@@ -77,12 +76,12 @@ const GridLayout: React.FC = () => {
             fill
             className="absolute inset-0 w-full h-full object-cover rounded-lg"
           />
-          <div className="absolute inset-0 bg-black/20 bg-blend-multiply rounded-lg"></div>
+          <div className="absolute inset-0 bg-black/20 group-hover:bg-black/35 transition-colors duration-300 bg-blend-multiply rounded-lg"></div>
           <div className="absolute z-10 left-4 top-4 text-white">
-            <p className="text-lg font-bold sm:text-xl md:text-2xl  mb-2">
+            <p className="text-lg font-bold sm:text-xl w-[90%] md:text-2xl  mb-2">
               {a.title}
             </p>
-            <p className="text-xs opacity-85 sm:text-sm md:text-sm w-72 sm:w-80">
+            <p className="text-xs opacity-85 sm:text-sm md:text-md w-72 sm:w-80">
               {a.content}
             </p>
           </div>
