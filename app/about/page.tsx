@@ -17,10 +17,10 @@ const Page = () => {
 
             {/* Headline */}
             <h1 className="text-[#8b8b8b] text-3xl md:text-5xl font-bold leading-tight">
-              Design Spaces
+              Elevating Spaces,
             </h1>
             <h2 className="text-3xl md:text-5xl font-bold">
-              Elavating Experiences.
+              Realizing Vision.
             </h2>
 
             {/* Description */}

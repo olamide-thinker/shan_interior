@@ -19,10 +19,8 @@ const ProcessTimeline: React.FC = () => {
         {steps.map((step: Step, index: number) => (
           <div
             key={step.id}
-            className={`relative  shadow-lg rounded-xl p-6 transition-transform border cursor-default
-              hover:scale-110 hover:rotate-0 hover:ring-2 ring-black transform ${
-                index % 2 === 0 ? "rotate-3 bg-background" : "-rotate-3 bg-white"
-              }`}
+            className={`relative  hover:shadow-lg rounded-xl p-6 transition-transform border cursor-default hover:scale-105 hover:rotate-0 transform 
+              `}
           >
             {/* Step Label */}
             <div className="absolute font-bold top-5 left-0 -translate-x-1/2 bg-black text-white text-xs px-2 py-1 rounded-full shadow-md italic">

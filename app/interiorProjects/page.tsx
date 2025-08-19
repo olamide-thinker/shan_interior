@@ -30,19 +30,19 @@ const Page = async () => {
             </h2>
           </div>
 
-          <div className=" bottom-0 w-full h-full md:h-auto md:-bottom-20 z-0">
-            <div className="relative h-full w-full flex items-center justify-center">
-              <Image
-                src={heroImage}
-                alt="Interior Projects Hero"
-                height={3000}
-                width={3000}
-                className="w-full
-                 h-[600px] object-bottom object-contain md:min-w-[75vw] mx-auto mt-2 md:mt-4 max-w-[2000px]"
-                priority
-              />
-            </div>
-          </div>
+          {/*<div className=" bottom-0 w-full h-full md:h-auto md:-bottom-20 z-0">*/}
+          {/*  <div className="relative h-full w-full flex items-center justify-center">*/}
+          {/*    <Image*/}
+          {/*      src={heroImage}*/}
+          {/*      alt="Interior Projects Hero"*/}
+          {/*      height={3000}*/}
+          {/*      width={3000}*/}
+          {/*      className="w-full*/}
+          {/*       h-[600px] object-bottom object-contain md:min-w-[75vw] mx-auto mt-2 md:mt-4 max-w-[2000px]"*/}
+          {/*      priority*/}
+          {/*    />*/}
+          {/*  </div>*/}
+          {/*</div>*/}
         </section>
       </div>
 

@@ -62,20 +62,20 @@ export default async function Home() {
         />
       </section>
 
-      {/* projects */}
-      <section className=" max-w-[2400px] mx-auto project-3D p-6 md:p-10 flex flex-col gap-6">
-        <HeaderTitle
-          title="3D Design Projects"
-          heading="Crafting Exceptional"
-          subHeading="Space with Purpose"
-          description="Experience your future space before it’s built. Our 3D design service transforms your ideas into immersive visuals, giving you clarity and confidence every step of the way."
-          button="Explore"
-        />
-        <ProjectList
-          projectFolderPrefix={"shanInteriorsProjects/project_3d"}
-          isFull={false}
-        />
-      </section>
+      {/*/!* projects *!/*/}
+      {/*<section className=" max-w-[2400px] mx-auto project-3D p-6 md:p-10 flex flex-col gap-6">*/}
+      {/*  <HeaderTitle*/}
+      {/*    title="3D Design Projects"*/}
+      {/*    heading="Crafting Exceptional"*/}
+      {/*    subHeading="Space with Purpose"*/}
+      {/*    description="Experience your future space before it’s built. Our 3D design service transforms your ideas into immersive visuals, giving you clarity and confidence every step of the way."*/}
+      {/*    button="Explore"*/}
+      {/*  />*/}
+      {/*  <ProjectList*/}
+      {/*    projectFolderPrefix={"shanInteriorsProjects/project_3d"}*/}
+      {/*    isFull={false}*/}
+      {/*  />*/}
+      {/*</section>*/}
 
       {/* projects */}
       <section className=" max-w-[2400px] mx-auto project-3D p-6 md:p-10 flex flex-col gap-6 hover:shadow-2xl rounded-lg transition-all duration-300">

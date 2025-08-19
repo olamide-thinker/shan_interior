@@ -12,15 +12,16 @@ export default function Nav() {
     <>
       <Link href="/">Home</Link>
       <Link href="/about">About Us</Link>
-      <Link href="/3DProjects">3D Design Projects</Link>
-      <Link href="/interiorProjects">Interior Design Projects</Link>
+      {/*<Link href="/3DProjects">3D Design Projects</Link>*/}
+      <Link href="/interiorProjects">Projects</Link>
     </>
   );
 
   return (
-    <nav className="bg-[#605d56] text-white px-4 py-2 rounded-full relative">
+    <nav className="bg-background shadow-sm text-muted-foreground px-4 py-2 rounded-full relative">
+    {/*<nav className="bg-[#605d56] text-white px-4 py-2 rounded-full relative">*/}
       {/* Desktop nav */}
-      <div className="hidden md:flex items-center gap-6 text-sm md:text-base">
+      <div className="hidden md:flex items-center gap-6 text-sm font-bold">
         {navLinks}
       </div>
 
